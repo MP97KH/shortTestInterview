@@ -1,0 +1,4 @@
+Helpers\FileReader.class
+Helpers\FilePresenceAndAccessCheckHelper.class
+Stepdefs\FileProcessingStepdefs.class
+Helpers\FileContentComparator.class
