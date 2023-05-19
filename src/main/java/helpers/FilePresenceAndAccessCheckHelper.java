@@ -1,4 +1,4 @@
-package Helpers;
+package helpers;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -6,7 +6,7 @@ import java.nio.file.Path;
 
 public class FilePresenceAndAccessCheckHelper {
 
-    public static boolean isFileExisting(String fileName, String fileExtension){
+    public static boolean isFileExisting(String fileName, String fileExtension) {
         Path path = null;
         try {
             path = Files.createTempFile(fileName, fileExtension);
@@ -16,7 +16,7 @@ public class FilePresenceAndAccessCheckHelper {
         return Files.exists(path);
     }
 
-    public static boolean isFileReadable(String fileName, String fileExtension){
+    public static boolean isFileReadable(String fileName, String fileExtension) {
         Path path = null;
         try {
             path = Files.createTempFile(fileName, fileExtension);
